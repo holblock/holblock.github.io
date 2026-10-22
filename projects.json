@@ -1,0 +1,51 @@
+[
+    {
+        "id": "ym-downloader",
+        "name": "YM-Downloader",
+        "description": "Uses yt-dlp to download music, with a ui, for windows, made in c",
+        "badges": ["C", "Windows"],
+        "platforms": {
+            "windows": {
+                "v2.1 (latest-stable-release)": "/downloads/YM-Downloader/Windows/v2.1/ytdlp-downloader.zip"
+            }
+        }
+    },
+    {
+        "id": "salmon-os",
+        "name": "Salmon-OS",
+        "description": "OS developed from scratch in c, why it is called Salmon-OS has been puzzling scientists for years,(only use with efi and x64)",
+        "badges": ["C", "OS"],
+        "platforms": {
+            "ISO": {
+                "v3.3 (latest-stable-release)": "/downloads/Salmon-OS/iso/Salmon-OS.zip"
+            }
+        }
+    },
+    {
+        "id": "nsf-live-output",
+        "name": "NSF-TV",
+        "description": "A livestream showing nsf feeds, when launches are available, it automatically switches the feeds to keep up to date on space news",
+        "badges": ["YT-DLP", "MEDIA-MTX"],
+        "platforms": {
+            "VIEW": {
+                "HTTP-WEBPAGE": "/live/current"
+            }
+        }
+    },
+    {
+        "id": "Cockle-Defeater",
+        "name": "COCKLE DEFEATER 9000",
+        "description": "Defeats Cockle, fast, no BS",
+        "badges": ["PYTHON", "JAVASCRIPT"],
+        "platforms": {
+            "PYTHON": {
+                "v1.2 (latest-stable-release)": "/downloads/Cockle-DEFEATER/python.zip"
+            },
+            "WEB": {
+                "whatever it is": "/downloads/Cockle-DEFEATER/web"
+            }
+
+        }
+    }
+
+]

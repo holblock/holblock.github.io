@@ -1,1 +1,60 @@
-<h1>basic test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+    <title>HoleBlack's Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="links-and-logos">
+                <img src="logo.png" alt="HB logo">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Downloads">Downloads</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section id="About" class="main-content">
+            <div class="content">
+                <div>
+                    <h2>About</h2>
+                    <p>
+                        This is a simple Webpage designed to be a blog/downloads page for my projects,
+                        keep in mind that all projects are work in progress, do not expect updates,
+                        I am not responsible for what you do with these projects, I am not responsible
+                        for helping you with them, or helping you compile them.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Downloads" class="main-content">
+            <div class="downloads-wrapper">
+                <h2>Downloads</h2>
+                <p>Find and Download any project</p>
+                <div class="project-list" id="project-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="links">
+            <h2>Reach me</h2>
+            <ul>
+                <li><a href="https://discord.com/users/1353784369990602857" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- yes i did steal this from cansat -->
+    <script src="project-search.js" defer></script>
+</body>
+</html>
