@@ -202,7 +202,7 @@ function game(data) {
         if (guess.toLowerCase() === "cock") {
             infoField.style.whiteSpace = "pre-line";
             infoField.textContent =
-                "You won! done in: \n" + tries +
+                "You won! done in: " + tries +
                 "\nshortest path: " + startingWordturns +
                 "\nbest path: " + startingWordbestpath;
             won = true;
@@ -232,10 +232,11 @@ function game(data) {
     });
 
     if (data && data.seed === elapsedTime) {
+        infoField.style.whiteSpace = "pre-line";
         infoField.textContent =
             "You won! done in: " + data.tries +
-            " shortest path: " + startingWordturns +
-            " best path: " + startingWordbestpath;
+            "\nshortest path: " + startingWordturns +
+            "\nbest path: " + startingWordbestpath;
         won = true;
 
         for (const guess of data.guesses) {
