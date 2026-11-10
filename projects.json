@@ -2,27 +2,49 @@
     {
         "id": "salmon-os",
         "name": "Salmon-OS",
-        "description": "OS developed from scratch in c, why it is called Salmon-OS has been puzzling scientists for years,(only use with efi and x64)",
+        "description": "OS developed from scratch in C. Why it is called Salmon-OS has been puzzling scientists for years. Only use with EFI and x64.",
         "badges": ["C", "OS"],
         "platforms": {
             "ISO": {
-                "v3.3 (latest-stable-release)": "/downloads/Salmon-OS/iso/Salmon-OS.zip"
+                "action": "Download",
+                "versions": {
+                    "v3.3 (latest-stable-release)": "/downloads/Salmon-OS/iso/Salmon-OS.zip"
+                }
             }
         }
     },
     {
         "id": "Cockle-Defeater",
         "name": "COCKLE DEFEATER 9000",
-        "description": "Defeats Cockle, fast, no BS",
+        "description": "Defeats Cockle, fast, no BS.",
         "badges": ["PYTHON", "JAVASCRIPT"],
         "platforms": {
             "PYTHON": {
-                "v1.2 (latest-stable-release)": "/downloads/Cockle-DEFEATER/python.zip"
+                "action": "Download",
+                "versions": {
+                    "v1.2 (latest-stable-release)": "/downloads/Cockle-DEFEATER/python.zip"
+                }
             },
             "WEB": {
-                "whatever it is": "/downloads/Cockle-DEFEATER/web"
+                "action": "View",
+                "versions": {
+                    "Latest version": "/downloads/Cockle-DEFEATER/web"
+                }
             }
-
+        }
+    },
+    {
+        "id": "Cockle-Enhanced",
+        "name": "COCKLE-ENHANCED",
+        "description": "Cockle, but better",
+        "badges": ["HTML", "JAVASCRIPT"],
+        "platforms": {
+            "WEB-PLAY": {
+                "action": "Web-Play",
+                "versions": {
+                    "latest-game": "/downloads/Cockle-ENHANCED/"
+                }
+            }
         }
     }
 

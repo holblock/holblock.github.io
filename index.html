@@ -1,61 +1,168 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy"
-          content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="HoleBlack's projects and downloads." />
+    <meta name="author" content="HoleBlack" />
+
     <title>HoleBlack's Webpage</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Bootstrap Theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header>
-        <nav>
-            <section class="links-and-logos">
-                <img src="logo.png" alt="HB logo">
-                <ul>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Downloads">Downloads</a></li>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+
+            <a class="navbar-brand" href="#!">Webblog</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            id="navbarDropdown"
+                            href="#projects"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Projects
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <li>
+                                <a class="dropdown-item" href="#projects">
+                                    All Projects
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
                 </ul>
-            </section>
-        </nav>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+
+            <div class="text-center text-white">
+
+                <h1 class="display-4 fw-bolder">
+                    HoleBlack's Webpage
+                </h1>
+
+                <p class="lead fw-normal text-white-50 mb-0">
+                    This is definitely not a template
+                </p>
+
+            </div>
+
+        </div>
     </header>
 
-    <main>
-        <section id="About" class="main-content">
-            <div class="content">
-                <div>
-                    <h2>About</h2>
-                    <p>
-                        This is a simple Webpage designed to be a blog/downloads page for my projects,
-                        keep in mind that all projects are work in progress, do not expect updates,
-                        I am not responsible for what you do with these projects, I am not responsible
-                        for helping you with them, or helping you compile them.
+
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+
+        <div class="container px-4 px-lg-5 mt-5">
+
+            <!-- Section heading -->
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bolder">
+                    Projects
+                </h2>
+
+                <p class="text-muted">
+                    Browse my projects and available downloads.
+                </p>
+
+            </div>
+
+            <!-- Dynamic Project Cards -->
+            <div
+                id="project-list"
+                class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center"
+            >
+
+                <!-- project-search.js populates this container -->
+
+                <div class="col text-center">
+                    <p class="text-muted">
+                        Loading projects...
                     </p>
                 </div>
-            </div>
-        </section>
 
-        <section id="Downloads" class="main-content">
-            <div class="downloads-wrapper">
-                <h2>Downloads</h2>
-                <p>Find and Download any project</p>
-                <div class="project-list" id="project-list"></div>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <div class="links">
-            <h2>Reach me</h2>
-            <ul>
-                <li><a href="https://discord.com/users/1353784369990602857" target="_blank" rel="noopener noreferrer">Discord</a></li>
-                <li><a href="https://holeblack.duckdns.org" target="_blank" rel="noopener noreferrer">OG Site</a></li>
-            </ul>
         </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+
+        <div class="container">
+
+            <p class="m-0 text-center text-white">
+                HoleBlack may or may not have your credit card information
+                (for legal reasons this is not a joke)
+            </p>
+
+        </div>
+
     </footer>
 
-    <!-- yes i did steal this from cansat -->
-    <script src="project-search.js" defer></script>
+    <!-- Core Theme JavaScript -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Project Loader -->
+    <script src="js/project-search.js"></script>
+
 </body>
 </html>
+
