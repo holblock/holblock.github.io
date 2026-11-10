@@ -13,10 +13,13 @@ let validWordsSet;
 let lowestturnsSet;
 let bestpathsSet;
 
-fetch("words.csv")
+const wordsUrl = new URL("words.csv", window.location.href);
+console.log("Fetching:", wordsUrl.href);
+
+fetch(wordsUrl)
     .then(response => {
         if (!response.ok) {
-            throw new Error("Could not load words.csv");
+            throw new Error(`Could not load ${wordsUrl.href}: HTTP ${response.status}`);
         }
         return response.text();
     })
@@ -57,7 +60,7 @@ fetch("words.csv")
         console.error(error);
         const infoField = document.getElementById("info");
         if (infoField) {
-            infoField.textContent = "Could not load the word list.";
+            infoField.textContent = "Could not load the word list. Check the server path.";
         }
     });
 
